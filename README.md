@@ -14,3 +14,12 @@ Make sure you have the following dependencies installed:
 requirement.txt
 
 
+Scripts
+Main.py
+This is the main script to run the training and testing of BaSIS-Net. It uses arguments to control its behavior.
+
+model_functions.py
+This script includes all functions related to the model, such as generating particles and computing importance ratios and likelihood.
+
+other_functions.py
+This script includes various utility functions, such as generating histograms with predictive distributions.
