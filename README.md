@@ -11,13 +11,8 @@ The project is structured into two folders (one for MNIST and one for CIFAR-10):
 - **model_functions.py**: Contains functions related to the model, such as generating particles, computing importance ratios, and likelihood.
 - **other_functions.py**: Contains other utility functions, such as generating plots (e.g., histograms with predictive distributions) and computing metrics.
 
-## Requirements
-
-Make sure you have the following dependencies installed:
-requirement.txt
-
 **Arguments**
-Here is a list of all the arguments that can be used with Main_MNIST.py and Main_CIFAR.py:
+Here is a list of all the arguments that can be used with **Main_MNIST.py** and **Main_CIFAR.py**:
 
 - **--Training**: Flag to indicate if training should be performed (True or False).
 - **--continue_training**: Flag to indicate if training should continue from a checkpoint (True or False).
@@ -46,17 +41,24 @@ Here is a list of all the arguments that can be used with Main_MNIST.py and Main
 - **--init_sigma**: Initial sigma for particles.
 - **--folder**: Folder to save model and logs.
 
-In addition, Main_MNIST.py includes:
+In addition, **Main_MNIST.py** includes:
 
 - **--sigma_particles_conv**: Sigma for particles in the convolutional layer.
 - **--sigma_particles_fc**: Sigma for particles in the fully connected layer.
 
-While Main_CIFAR.py:
+While **Main_CIFAR.py**:
 
 - **--sigma_particles**: Sigma for particles in both convolutional as well as fully connected layers.
 - **--PGD_Adversarial_noise**: Flag to indicate if PGD adversarial noise should be added (True or False).
 - **--maxAdvStep**: Number of steps for the PGD attack.
 - **--stepSize**: Step size for the PGD attack.
+- 
+## Requirements
+
+Make sure you have the following dependencies installed:
+requirement.txt
+
+
 
 
 
