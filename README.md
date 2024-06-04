@@ -7,15 +7,20 @@ This repository contains the implementation of BaSIS-Net as described in the pap
 The project is structured into two folders (one for MNIST and one for CIFAR-10):
 
 ## Project structure
-BaSIS-Net/
+
 ├── README.md
+
 ├── Main_CIFAR.py
+
 ├── Main_MNIST.py
+
 ├── model_functions.py
+
 ├── other_functions.py
+
 ├── Requirements.txt
 
-## Scripts
+**Scripts**
 
 - **Main_MNIST.py**: The main script to run training and testing for the MNIST dataset.
 - **Main_CIFAR.py**: The main script to run training and testing for the CIFAR-10 dataset.
@@ -63,11 +68,14 @@ While **Main_CIFAR.py**:
 - **--PGD_Adversarial_noise**: Flag to indicate if PGD adversarial noise should be added (True or False).
 - **--maxAdvStep**: Number of steps for the PGD attack.
 - **--stepSize**: Step size for the PGD attack.
-- 
+  
 ## Requirements
 
-Make sure you have the following dependencies installed:
-requirement.txt
+Install all required python dependencies:
+
+```sh
+pip install -r requirements.txt
+
 
 
 
