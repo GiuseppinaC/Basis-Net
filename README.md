@@ -3,16 +3,21 @@
 
 Data-driven Deep Learning (DL) models have revolutionized autonomous systems, but ensuring their safety and reliability necessitates the assessment of predictive confidence or uncertainty. Bayesian DL provides a principled approach to quantify uncertainty via probability density functions defined over model parameters. However, the exact solution is intractable for most DL models, and the approximation methods, often based on heuristics, suffer from scalability issues and stringent distribution assumptions and may lack theoretical guarantees. This work develops a Sequential Importance Sampling framework that approximates the posterior probability density function through weighted samples (or particles), which can be used to find the mean, variance, or higher-order moments of the posterior distribution. We demonstrate that propagating particles, which capture information about the higher-order moments, through the layers of the DL model results in increased robustness to natural and malicious noise (adversarial attacks). The variance computed from these particles effectively quantifies the model's decision uncertainty, demonstrating well-calibrated and accurate predictive confidence.
 
-This repository contains the implementation of BaSIS-Net as described in the paper. 
+This repository contains the implementation of BaSIS-Net as described in the paper. To be published in Transactions on Machine Learning Research, 2024.
 The project is structured into two folders (one for MNIST and one for CIFAR-10):
 
 ## Project structure
-
+```sh
 ├── README.md
+
 ├── Main_CIFAR.py
+
 ├── Main_MNIST.py
+
 ├── model_functions.py
+
 ├── other_functions.py
+
 ├── Requirements.txt
 
 
