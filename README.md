@@ -9,16 +9,12 @@ The project is structured into two folders (one for MNIST and one for CIFAR-10):
 ## Project structure
 
 ├── README.md
-
 ├── Main_CIFAR.py
-
 ├── Main_MNIST.py
-
 ├── model_functions.py
-
 ├── other_functions.py
-
 ├── Requirements.txt
+
 
 **Scripts**
 
