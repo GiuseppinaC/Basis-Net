@@ -9,9 +9,8 @@ The project is structured into two folders (one for MNIST and one for CIFAR-10):
 ## Project structure
 ```sh
 ├── README.md
-├── Main
-    ├── Main_CIFAR.py
-    ├── Main_MNIST.py
+├── Main_CIFAR.py
+├── Main_MNIST.py
 ├── model_functions.py
 ├── other_functions.py
 ├── Requirements.txt
@@ -26,6 +25,7 @@ The project is structured into two folders (one for MNIST and one for CIFAR-10):
 - **other_functions.py**: Contains other utility functions, such as generating plots (e.g., histograms with predictive distributions) and computing metrics.
 
 **Arguments**
+
 Here is a list of all the arguments that can be used with **Main_MNIST.py** and **Main_CIFAR.py**:
 
 - **--Training**: Flag to indicate if training should be performed (True or False).
@@ -74,7 +74,15 @@ Install all required python dependencies:
 ```sh
 pip install -r requirements.txt
 ```
+## Running Experiments
 
+**Training:
+
+If Training, with default options for 4 epochs -- Model_2024 folder will be created
+
+```sh
+python BaSIS/Main.py --folder Model_2024 --epochs 4 --Training True
+```
 
 
 
