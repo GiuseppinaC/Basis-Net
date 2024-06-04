@@ -9,15 +9,11 @@ The project is structured into two folders (one for MNIST and one for CIFAR-10):
 ## Project structure
 ```sh
 ├── README.md
-
-├── Main_CIFAR.py
-
-├── Main_MNIST.py
-
+├── Main
+    ├── Main_CIFAR.py
+    ├── Main_MNIST.py
 ├── model_functions.py
-
 ├── other_functions.py
-
 ├── Requirements.txt
 ```
 
@@ -76,7 +72,8 @@ While **Main_CIFAR.py**:
 Install all required python dependencies:
 
 ```sh
-pip install -r requirements.txt ```
+pip install -r requirements.txt
+```
 
 
 
