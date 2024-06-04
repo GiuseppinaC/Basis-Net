@@ -6,9 +6,10 @@ The project is structured into two folders (one for MNIST and one for CIFAR-10):
 
 ## Scripts
 
-- **Main.py**: The main script to run training and testing.
+- **Main_MNIST.py**: The main script to run training and testing for the MNIST dataset.
+- **Main_CIFAR.py**: The main script to run training and testing for the CIFAR-10 dataset.
 - **model_functions.py**: Contains functions related to the model, such as generating particles, computing importance ratios, and likelihood.
-- **other_functions.py**: Contains other utility functions, such as generating plots (e.g., histograms with predictive distributions).
+- **other_functions.py**: Contains other utility functions, such as generating plots (e.g., histograms with predictive distributions) and computing metrics.
 
 ## Requirements
 
