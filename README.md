@@ -82,12 +82,45 @@ If Training, with default options (NOTE: Model_2024 folder will be created)
 
 
 ```sh
-python BaSIS/Main.py --folder Model_2024 --epochs 4 --Training True
+python BaSIS/Main.py --folder Model_2024 --Training True
 ```
 
+**Testing - Clean Test Data:**
+
+If Testing (with default options) on clean data:
 
 
+```sh
+python BaSIS/Main.py --folder Model_2024 --Testing True
+```
 
+**Testing - Noisy Test Data:**
+
+When Testing with added Gaussian noise, we need to specify the level of noise (variance) :
+
+
+```sh
+python BaSIS/Main.py --folder Model_2024 --Random_noise True --gaussian_noise_var 0.01
+```
+
+When Testing with added Adversarial (FGSM) attacks, we need to specify:
+- the level of the attack (epsilon)
+- if targeted or not (default is untargeted)
+- the fooling class (for targeted attacks)
+
+
+```sh
+python BaSIS/Main.py --folder Model_2024 --Adversarial_noise True --epsilon 0.01 --targeted True --adversary_target_cls 1
+```
+
+When Testing with added Adversarial (PGD) attacks for CIFAR-10, we need to specify:
+- the number of steps for the PGD attack
+- the step size for the PGD attack
+in addition to those listed above.
+
+```sh
+python BaSIS/Main.py --folder Model_2024 --PGD_Adversarial_noise True --epsilon 0.01 --targeted True --adversary_target_cls 1 --maxAdvStep 40 --stepSize 1
+```
 
 
 
