@@ -76,9 +76,10 @@ pip install -r requirements.txt
 ```
 ## Running Experiments
 
-**Training:
+**Training:**
 
-If Training, with default options for 4 epochs -- Model_2024 folder will be created
+If Training, with default options (NOTE: Model_2024 folder will be created)
+
 
 ```sh
 python BaSIS/Main.py --folder Model_2024 --epochs 4 --Training True
